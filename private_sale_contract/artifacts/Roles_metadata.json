@@ -1,0 +1,38 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"author": "Francisco Giordano (@frangio)\r",
+			"methods": {},
+			"title": "Roles\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Roles.sol": "Roles"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Roles.sol": {
+			"keccak256": "0x844dda786f9df1a34c3c0d5c5f176f2313e71e8449b47d50fd5a3c08c1be7193",
+			"urls": [
+				"bzzr://c87c8fb23cb2eef54e137377e57234915f238029195da7ba330ecb86e8aacefa"
+			]
+		}
+	},
+	"version": 1
+}

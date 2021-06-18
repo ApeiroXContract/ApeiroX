@@ -1,0 +1,49 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"methods": {},
+			"title": "SafeERC20\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SafeERC20.sol": "SafeERC20"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ERC20.sol": {
+			"keccak256": "0x8436ae71a51f4f92851e77e14e917e3d996743418f527515b8501cbc7126d459",
+			"urls": [
+				"bzzr://759ffdb0c072e0da678a7f12ba18b52ac6eb579b84feb6f527a919394da1d4a2"
+			]
+		},
+		"ERC20Basic.sol": {
+			"keccak256": "0x6f475a106dec20d6ad19910cb1599494f8ba73af3e4693bdc92d8e3acc831bd9",
+			"urls": [
+				"bzzr://b21844a032c178ce6aa06f44be475ab3cab1dabfa072b871d62e4d9714b7cbf0"
+			]
+		},
+		"SafeERC20.sol": {
+			"keccak256": "0x7e856ecf858e7d98c8c3138ae317454a611848fc681e3d459965cd38ef043d15",
+			"urls": [
+				"bzzr://9ef5b29a77b86a8024a4bec8fc214b15f8c1474ee103efe302c847f85b9ff94f"
+			]
+		}
+	},
+	"version": 1
+}

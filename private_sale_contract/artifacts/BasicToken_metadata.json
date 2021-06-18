@@ -1,0 +1,146 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"balanceOf(address)": {
+					"details": "Gets the balance of the specified address.\r",
+					"params": {
+						"_owner": "The address to query the the balance of.\r"
+					},
+					"return": "An uint256 representing the amount owned by the passed address.\r"
+				},
+				"totalSupply()": {
+					"details": "Total number of tokens in existence\r"
+				},
+				"transfer(address,uint256)": {
+					"details": "Transfer token for a specified address\r",
+					"params": {
+						"_to": "The address to transfer to.\r",
+						"_value": "The amount to be transferred.\r"
+					}
+				}
+			},
+			"title": "Basic token\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BasicToken.sol": "BasicToken"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BasicToken.sol": {
+			"keccak256": "0x3d52aaa6a8bcdb12027527870dad0a3a823971744152235670d250842524f057",
+			"urls": [
+				"bzzr://8575b9d8344c69db080900e98c060afb52c88109338527e4ecf750286ec543f5"
+			]
+		},
+		"ERC20Basic.sol": {
+			"keccak256": "0x6f475a106dec20d6ad19910cb1599494f8ba73af3e4693bdc92d8e3acc831bd9",
+			"urls": [
+				"bzzr://b21844a032c178ce6aa06f44be475ab3cab1dabfa072b871d62e4d9714b7cbf0"
+			]
+		},
+		"SafeMath.sol": {
+			"keccak256": "0xb074600bbed1b35614ac3f209db9b38eb353029476f9a1ac91799c1a38293f8b",
+			"urls": [
+				"bzzr://8b4234fb73087a25443141271cbb4841f60c54a052667de0209e92f9dd6ffeb5"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,38 @@
+{
+	"compiler": {
+		"version": "0.5.16+commit.9c3226ce"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Using this library instead of the unchecked operations eliminates an entire class of bugs, so it's recommended to use it always.",
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ApeiroX.sol": "SafeMath"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ApeiroX.sol": {
+			"keccak256": "0x7d87a972e669c8302d4434518b3cb64eb486ee3b6981f2cb39780d137d105e03",
+			"urls": [
+				"bzz-raw://eb2e695cfcced0debe1f8acf65839736805b926bf240f6caf425842b2899bf5b",
+				"dweb:/ipfs/QmYmvomZJgYvZYZhEbVrvC28Abk6wE4XkKH5GwhygZJYRh"
+			]
+		}
+	},
+	"version": 1
+}

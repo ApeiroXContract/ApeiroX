@@ -1,0 +1,243 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "rate",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "cap",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "weiRaised",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "val",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawUnsoldTokens",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "capReached",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "wallet",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_beneficiary",
+						"type": "address"
+					}
+				],
+				"name": "buyTokens",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_wallet",
+						"type": "address"
+					},
+					{
+						"name": "_token",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "purchaser",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "beneficiary",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokenPurchase",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"buyTokens(address)": {
+					"details": "low level token purchase ***DO NOT OVERRIDE***\r",
+					"params": {
+						"_beneficiary": "Address performing the token purchase\r"
+					}
+				},
+				"capReached()": {
+					"details": "Checks whether the cap has been reached.\r",
+					"return": "Whether the cap was reached\r"
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ApeiroXCrowdsale.sol": "ApeiroXCrowdsale"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ApeiroXCrowdsale.sol": {
+			"keccak256": "0xdd1d012c04c8ba87663e307deea886e4d39e4fe2e0b466ecdaf0141d1536e870",
+			"urls": [
+				"bzzr://8cb9ca50c6f17eacf9af47dfd5c5b2157226e3ba530707238727b18d723534d7"
+			]
+		},
+		"CappedCrowdsale.sol": {
+			"keccak256": "0xa9beb1d3d4db4e4d95e06ee16b0641bb9ead9cf8a7c0a8299c8fbfc06e2d5198",
+			"urls": [
+				"bzzr://567eb8f13766f3b386d5fded16c3aa7f5ba77ef254535ca9456ec790fed43433"
+			]
+		},
+		"Crowdsale.sol": {
+			"keccak256": "0x8729ce6c6c59b675ab015cf396d3b8d25be4dfdbc2030ecc7b9e668d6d7d8ca0",
+			"urls": [
+				"bzzr://bac7d6c5337a50d39ae9f4d57fb20812d55891a94ad368680085de5d4a28dbdb"
+			]
+		},
+		"ERC20.sol": {
+			"keccak256": "0x8436ae71a51f4f92851e77e14e917e3d996743418f527515b8501cbc7126d459",
+			"urls": [
+				"bzzr://759ffdb0c072e0da678a7f12ba18b52ac6eb579b84feb6f527a919394da1d4a2"
+			]
+		},
+		"ERC20Basic.sol": {
+			"keccak256": "0x6f475a106dec20d6ad19910cb1599494f8ba73af3e4693bdc92d8e3acc831bd9",
+			"urls": [
+				"bzzr://b21844a032c178ce6aa06f44be475ab3cab1dabfa072b871d62e4d9714b7cbf0"
+			]
+		},
+		"SafeERC20.sol": {
+			"keccak256": "0x7e856ecf858e7d98c8c3138ae317454a611848fc681e3d459965cd38ef043d15",
+			"urls": [
+				"bzzr://9ef5b29a77b86a8024a4bec8fc214b15f8c1474ee103efe302c847f85b9ff94f"
+			]
+		},
+		"SafeMath.sol": {
+			"keccak256": "0xb074600bbed1b35614ac3f209db9b38eb353029476f9a1ac91799c1a38293f8b",
+			"urls": [
+				"bzzr://8b4234fb73087a25443141271cbb4841f60c54a052667de0209e92f9dd6ffeb5"
+			]
+		}
+	},
+	"version": 1
+}

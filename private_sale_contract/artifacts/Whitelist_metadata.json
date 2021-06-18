@@ -1,0 +1,346 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"name": "_role",
+						"type": "string"
+					}
+				],
+				"name": "checkRole",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "ROLE_WHITELISTED",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"name": "_role",
+						"type": "string"
+					}
+				],
+				"name": "hasRole",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_operators",
+						"type": "address[]"
+					}
+				],
+				"name": "removeAddressesFromWhitelist",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_operator",
+						"type": "address"
+					}
+				],
+				"name": "removeAddressFromWhitelist",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_operator",
+						"type": "address"
+					}
+				],
+				"name": "addAddressToWhitelist",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_operator",
+						"type": "address"
+					}
+				],
+				"name": "whitelist",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_operators",
+						"type": "address[]"
+					}
+				],
+				"name": "addAddressesToWhitelist",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "role",
+						"type": "string"
+					}
+				],
+				"name": "RoleAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "role",
+						"type": "string"
+					}
+				],
+				"name": "RoleRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipRenounced",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"addAddressToWhitelist(address)": {
+					"details": "add an address to the whitelist\r",
+					"params": {
+						"_operator": "address\r"
+					},
+					"return": "true if the address was added to the whitelist, false if the address was already in the whitelist\r"
+				},
+				"addAddressesToWhitelist(address[])": {
+					"details": "add addresses to the whitelist\r",
+					"params": {
+						"_operators": "addresses\r"
+					},
+					"return": "true if at least one address was added to the whitelist,\r false if all addresses were already in the whitelist\r"
+				},
+				"checkRole(address,string)": {
+					"details": "reverts if addr does not have role\r",
+					"params": {
+						"_operator": "address\r",
+						"_role": "the name of the role\r // reverts\r"
+					}
+				},
+				"hasRole(address,string)": {
+					"details": "determine if addr has role\r",
+					"params": {
+						"_operator": "address\r",
+						"_role": "the name of the role\r"
+					},
+					"return": "bool\r"
+				},
+				"removeAddressFromWhitelist(address)": {
+					"details": "remove an address from the whitelist\r",
+					"params": {
+						"_operator": "address\r"
+					},
+					"return": "true if the address was removed from the whitelist,\r false if the address wasn't in the whitelist in the first place\r"
+				},
+				"removeAddressesFromWhitelist(address[])": {
+					"details": "remove addresses from the whitelist\r",
+					"params": {
+						"_operators": "addresses\r"
+					},
+					"return": "true if at least one address was removed from the whitelist,\r false if all addresses weren't in the whitelist in the first place\r"
+				},
+				"renounceOwnership()": {
+					"details": "Allows the current owner to relinquish control of the contract.\r"
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.\r",
+					"params": {
+						"_newOwner": "The address to transfer ownership to.\r"
+					}
+				},
+				"whitelist(address)": {
+					"details": "getter to determine if address is in whitelist\r"
+				}
+			},
+			"title": "Whitelist\r"
+		},
+		"userdoc": {
+			"methods": {
+				"renounceOwnership()": {
+					"notice": "Renouncing to ownership will leave the contract without an owner.\r It will not be possible to call the functions with the `onlyOwner`\r modifier anymore.\r"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Whitelist.sol": "Whitelist"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ownable.sol": {
+			"keccak256": "0xc9d07034b19f50ec4a29d6c575fa0a0b48267d1b9661d1161f81a5304619bfe1",
+			"urls": [
+				"bzzr://f64e20b9cc7dc012c95b602ac47de474688274d530372f374a690c72d19e73fb"
+			]
+		},
+		"RBAC.sol": {
+			"keccak256": "0x060820105145bc4fe5d34d8d0a38d3794becc58fdd57bec25c21d2e75ce2db34",
+			"urls": [
+				"bzzr://53f2fbffcf5cecd47ac4ffb645acaf2a806373cd6f9a4339ad842d1adff42df4"
+			]
+		},
+		"Roles.sol": {
+			"keccak256": "0x844dda786f9df1a34c3c0d5c5f176f2313e71e8449b47d50fd5a3c08c1be7193",
+			"urls": [
+				"bzzr://c87c8fb23cb2eef54e137377e57234915f238029195da7ba330ecb86e8aacefa"
+			]
+		},
+		"Whitelist.sol": {
+			"keccak256": "0xf94cfd655b006248444eac8eb27d43b678dbb4c6c21add8decc1131b84a21fc5",
+			"urls": [
+				"bzzr://93d3d33a1444d7eab9b129c7a9874fc248a335436c3236b32192afd96a2148a1"
+			]
+		}
+	},
+	"version": 1
+}

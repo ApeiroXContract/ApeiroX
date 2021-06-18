@@ -1,0 +1,136 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"name": "_role",
+						"type": "string"
+					}
+				],
+				"name": "checkRole",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_operator",
+						"type": "address"
+					},
+					{
+						"name": "_role",
+						"type": "string"
+					}
+				],
+				"name": "hasRole",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "role",
+						"type": "string"
+					}
+				],
+				"name": "RoleAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "role",
+						"type": "string"
+					}
+				],
+				"name": "RoleRemoved",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"author": "Matt Condon (@Shrugs)\r",
+			"methods": {
+				"checkRole(address,string)": {
+					"details": "reverts if addr does not have role\r",
+					"params": {
+						"_operator": "address\r",
+						"_role": "the name of the role\r // reverts\r"
+					}
+				},
+				"hasRole(address,string)": {
+					"details": "determine if addr has role\r",
+					"params": {
+						"_operator": "address\r",
+						"_role": "the name of the role\r"
+					},
+					"return": "bool\r"
+				}
+			},
+			"title": "RBAC (Role-Based Access Control)\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"RBAC.sol": "RBAC"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"RBAC.sol": {
+			"keccak256": "0x060820105145bc4fe5d34d8d0a38d3794becc58fdd57bec25c21d2e75ce2db34",
+			"urls": [
+				"bzzr://53f2fbffcf5cecd47ac4ffb645acaf2a806373cd6f9a4339ad842d1adff42df4"
+			]
+		},
+		"Roles.sol": {
+			"keccak256": "0x844dda786f9df1a34c3c0d5c5f176f2313e71e8449b47d50fd5a3c08c1be7193",
+			"urls": [
+				"bzzr://c87c8fb23cb2eef54e137377e57234915f238029195da7ba330ecb86e8aacefa"
+			]
+		}
+	},
+	"version": 1
+}
